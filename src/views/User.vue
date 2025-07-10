@@ -21,7 +21,7 @@
         </div>
         <div class="user-info">
           <h2 class="username">{{ userInfo.username }}</h2>
-          <p class="user-role">{{ userInfo.role }}</p>
+          <p class="user-role">{{ userInfo.userRole }}</p>
         </div>
       </div>
       
@@ -130,7 +130,7 @@ export default {
       tempInfo: {},    // 用于存储编辑时的临时数据
       userInfo: {
         username: '张三',
-        role: '客服主管',
+        userRole: '客服主管',
         avatar: 'https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png',
         gender: '男',
         phone: '13800138000',

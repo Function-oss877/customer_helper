@@ -60,7 +60,6 @@
             />
             <span class="error-message" v-if="errors.confirmPassword">{{ errors.confirmPassword }}</span>
           </div>
-
           <!-- 性别 -->
           <div class="form-group">
             <label>性别</label>
@@ -284,10 +283,10 @@ export default {
         
         this.showNotification('注册成功！', 'success')
         
-        // 延迟1秒后返回
+        // 延迟0.1秒后返回
         setTimeout(() => {
           this.navigateBack()
-        }, 1000)
+        }, 100)
         
       } catch (error) {
         console.error('注册失败:', error)
